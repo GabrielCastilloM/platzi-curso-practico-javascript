@@ -1,5 +1,8 @@
 header {
     text-align: center;
+    color: #4550e0
+    ba
+
 }
 
 .container {
@@ -7,41 +10,35 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    gap: 15px;
 }
 
 .container_cuadrado {
-    /* background-color: blue;
-    display: flex; 
-    flex-direction: column;
-    gap: 15px; */
-  
-   
+    display: flex;
 }
+
+.card-footer {
+    height: 80px;
+}
+
 .form {
-    /* background-color: chartreuse;   */
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 20px;
+    gap: 5px;
     align-self: center;
-  
+
 }
 .form > button {
-    
     align-self: center;
 }
 
 .container_triangulo {
-    background-color: rgb(58, 133, 86);
-    width: 350px;
-    height: 300px;
+    display: flex;
+
 }
 
 .container_circulo {
-    background-color: rgb(216, 37, 37);
-    width: 350px;
-    height: 300px;
+    display: flex;
 }
 
 

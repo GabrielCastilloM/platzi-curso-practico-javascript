@@ -71,18 +71,22 @@ console.groupEnd()
 
 //Aquí interactuamos con HTML
 function calcularPerimetroCuadrado(params) {
-    const input = document.getElementById('inputCuadrado')
+    const input = document.getElementById('inputCuadrado')   
     const value = input.value
-    const perimetrot = perimetroCuadrado(value)
-    alert(perimetrot)
-  
+    const perimetro = perimetroCuadrado(value)
+    const estiloResultado = document.querySelector("#footerCuadrado")
+    estiloResultado.innerHTML = `<h5>El perimetro del cuadrado es: ${perimetro}</h5>`
+    estiloResultado.style = "background:#c7c7d9";
+
 }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById('inputCuadrado')
     const value = input.value
     const area = areaCuadrado(value)
-    alert(area)
+    const estiloResultado = document.querySelector("#footerCuadrado")
+    estiloResultado.innerHTML = `<h5>El área del cuadrado es: ${area}</h5>`
+    estiloResultado.style = "background:#97d280";
 }
 
 const calcularPerimetroTriangulo = () => {
@@ -90,25 +94,33 @@ const calcularPerimetroTriangulo = () => {
     const ladoB = parseInt(document.querySelector('#inputTriaguloB').value)
     const base = parseInt(document.querySelector('#base').value)
     const perimetro = perimetroTriagulo(ladoA , ladoB, base)
-    alert(perimetro)
+    const estiloResultado = document.querySelector("#footerTriangulo")
+    estiloResultado.innerHTML = `<h5>El perimetro del triangulo es: ${perimetro}</h5>`
+    estiloResultado.style = "background:#c7c7d9";
 }
 
 const calcularAreaTriangulo = () => {
     const base = parseInt(document.querySelector('#base').value)
     const altura = parseInt(document.querySelector('#altura').value)
     const area = areaTriagulo(base, altura)
-    alert(area)
+    const estiloResultado = document.querySelector("#footerTriangulo")
+    estiloResultado.innerHTML = `<h5>El área del triangulo es: ${area}</h5>`
+    estiloResultado.style = "background:#97d280";
 }
 
 const calcularPerimetroCirculo = () => {
     const radio = parseInt(document.querySelector('#inputRadio').value)
     const perimetro = perimetroCirculo(radio)
-    alert(perimetro)
+    const estiloResultado = document.querySelector("#footerCirculo")
+    estiloResultado.innerHTML = `<h5>El perimetro del círculo es: ${perimetro}</h5>`
+    estiloResultado.style = "background:#97d280";
 }
 
 const calcularAreaCirculo = () => {
     const radio = parseInt(document.querySelector('#inputRadio').value)
     const area = areaCirculo(radio)
-    alert(area)
+    const estiloResultado = document.querySelector("#footerCirculo")
+    estiloResultado.innerHTML = `<h5>El área del círculo es: ${area}</h5>`
+    estiloResultado.style = "background:#97d280";
 }
 
