@@ -24,7 +24,7 @@ console.groupEnd()
 //     + ladoTriagulo1
 //     + 'cm, '
 //     + ladoTriagulo2
-//     + 'cm, ' 
+//     + 'cm, '
 //     + baseTriagulo
 //     + 'cm'
 // );
@@ -71,7 +71,7 @@ console.groupEnd()
 
 //Aquí interactuamos con HTML
 function calcularPerimetroCuadrado(params) {
-    const input = document.getElementById('inputCuadrado')   
+    const input = document.getElementById('inputCuadrado')
     const value = input.value
     const perimetro = perimetroCuadrado(value)
     const estiloResultado = document.querySelector("#footerCuadrado")
