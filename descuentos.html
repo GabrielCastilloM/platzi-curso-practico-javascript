@@ -23,6 +23,13 @@
             <label for="inputDiscount">Escribe el descuento de tu producto</label>
             <input id="inputDiscount" type="number"/>
 
+            <select class="form-select" aria-label="Default select example">
+                <option value="0" selected>Selecciona Cupon</option>
+                <option value="10">Cupon de descuento 10%</option>
+                <option value="20">Cupon de descuento 20%</option>
+                <option value="30">Cupon de descuento 30%</option>
+              </select>
+
             <button type="button" onclick="aplicarDescuento()">
                 Calcular el precio con descuento
             </button>
@@ -30,7 +37,6 @@
             <p id="resultP"></p>
         </form>
     </section>
-    
     <script src="./descuentos.js"></script>
 </body>
 </html>
