@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    color: #157347
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
+
+.form > button {
+    align-self: center;
+}
+
+#resultP{
+    color: white;
+}

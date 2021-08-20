@@ -22,15 +22,22 @@ function aplicarDescuento() {
     const precioConDescuento = calcularPrecioConDescuento(priceValue, descuentoMasCupon)
     const resultp = document.querySelector("#resultP")
     resultp.innerText = 'El precio con descuento es: $' + precioConDescuento;
+    pintarResultado()
 
 }
 
-function obtenerCupon()
-        {
-        /* Para obtener el valor */
-        var cupon = parseInt(document.querySelector(".form-select").value);
-        return cupon
-        }
+function obtenerCupon(){
+    /* Para obtener el valor */
+    var cupon = parseInt(document.querySelector(".form-select").value);
+    return cupon
+}
+function pintarResultado() {
+    const estiloResultado = document.querySelector(".card-footer")    
+    console.log(estiloResultado);
+    estiloResultado.style = "background:#157347";
+    
+}
+
 
         // /* Para obtener el texto */
         // var combo = document.querySelector(".form-select");
