@@ -1,8 +1,6 @@
 header {
     text-align: center;
-    color: #4550e0
-    ba
-
+    color: #4550e0;
 }
 
 .container {
@@ -26,15 +24,14 @@ header {
     justify-content: space-around;
     gap: 5px;
     align-self: center;
-
 }
+
 .form > button {
     align-self: center;
 }
 
 .container_triangulo {
     display: flex;
-
 }
 
 .container_circulo {
