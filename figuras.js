@@ -113,7 +113,7 @@ const calcularPerimetroCirculo = () => {
     const perimetro = perimetroCirculo(radio)
     const estiloResultado = document.querySelector("#footerCirculo")
     estiloResultado.innerHTML = `<h5>El perimetro del círculo es: ${perimetro}</h5>`
-    estiloResultado.style = "background:#97d280";
+    estiloResultado.style = "background:#c7c7d9";
 }
 
 const calcularAreaCirculo = () => {

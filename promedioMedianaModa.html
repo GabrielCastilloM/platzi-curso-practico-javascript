@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Mediana y Moda</title>
+    <link rel="stylesheet" href="./promedioMedianaModa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Promedio Mediana y Moda</h1>
+        <p>Este el tercer taller del curso práctico de JavaScript</p>
+    </header>
+
+    <section id="lista">
+        <div class="card border-warning mb-3 shadow justify-content-center" style="max-width: 38rem;">
+            <div class="card-header bg-transparent border-warning text-warning text-center" >
+                <h5 >Crea tu lista de numeros</h5>
+            </div>
+            <div class="card-body text-warning text-center">
+                <form>
+                    <div class="col-md-6 ">
+                        <div class="form-group text-warning">
+                            <label for="inputLista" class="form-label">Digite numeros y agreguelos a lista presionando el boton</label>
+                            <input id="inputLista" type="number" class="form-control"/>
+                            <button id="llenarLista" onclick="llenarListaNumeros()" type="button" class="btn btn-warning mb-3">
+                            Agregar Numero a Lista
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="card-footer border-warning">
+               <p class="text-warning text-center" id="resultlista"></p>
+               <h5 class="text-warning text-center" id="resultlistaOrdenada"></h5>
+            </div>
+        </div>
+    </section>
+
+    <div class="col text-center">
+        <button class="btn btn-warning mb-3" type="button" onclick="calcular()"> Calcular </button>
+     </div>
+
+    <div class="container">
+        <section>
+            <div class="card border-warning mb-3 shadow" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-warning text-warning text-center" >
+                    <h5 >Resultado Promedio</h5>
+                </div>
+                <div class="card-footer border-warning foterColorP">
+                    <h5 id="resultP"> </h5>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card border-warning mb-3 shadow" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-warning text-warning text-center" >
+                    <h5 >Resultado Mediana</h5>
+                </div>
+                
+                <div class="card-footer border-warning foterColorMe">
+                    <h5 id="resultMe"></h5>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card border-warning mb-3 shadow" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-warning text-warning text-center" >
+                    <h5 >Resultado Moda</h5>
+                </div>
+               
+                <div class="card-footer border-warning foterColorMo">
+                   <h5 id="resultMo"></h5>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center ">
+        <p>
+            Copyright &copy; 2021
+            Echo por  Gabriel Castillo
+        </p>
+    </footer>
+    
+    <script src="./promedioMedianaModa.js"></script>
+</body>
+</html>
