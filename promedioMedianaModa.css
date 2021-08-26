@@ -22,11 +22,10 @@ form {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 #llenarLista {
-   margin-top: 15px;
+    margin-top: 15px;
 }
 
 

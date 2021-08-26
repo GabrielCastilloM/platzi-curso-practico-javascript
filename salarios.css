@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    color: #dc3545;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+button{
+    margin-top: 20px;
+}
+

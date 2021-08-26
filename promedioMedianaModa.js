@@ -23,7 +23,6 @@ function llenarListaNumeros(params) {
 }
 
 function calcular() {
-   
     calcularMediaArimetica(listaNumeros)
     calcularMediana(listaNumeros)
     calcularModa(listaNumeros) 
@@ -64,7 +63,6 @@ const listaOrdenada =  listaNumeros.sort(function (a, b) {
 
 
 function calcularMediana(lista) {
-    
 
     let mediana;
     const mitadLista = parseInt(lista.length / 2)
@@ -77,12 +75,11 @@ function calcularMediana(lista) {
             elemento2,
         ])
         const resultMe = document.querySelector("#resultMe")
-        
-        resultMe.innerText = `Es:  ${promedioElemto1y2}` 
+        resultMe.innerText = `Es:  ${promedioElemto1y2}`
         return mediana = promedioElemto1y2;
 
     } else {
-        resultMe.innerText = `Es:  ${listaOrdenada[mitadLista]}` 
+        resultMe.innerText = `Es:  ${listaOrdenada[mitadLista]}`
         return mediana = listaOrdenada[mitadLista]
     }
 }
@@ -109,7 +106,7 @@ function calcularModa(lista) {
     )
     const moda = listaArray [listaArray.length - 1 ]
     const resultMo = document.querySelector("#resultMo")
-    resultMo.innerText = `Es:  ${moda}` 
+    resultMo.innerText = `Es:  ${moda}`
     return moda;
 }
 
@@ -118,7 +115,6 @@ function pintarResultado() {
     const estiloResultado1 = document.querySelector(".foterColorP")
     const estiloResultado2 = document.querySelector(".foterColorMe")
     const estiloResultado3 = document.querySelector(".foterColorMo")
-  
     estiloResultado1.style = "background:#ffc107";
     estiloResultado2.style = "background:#ffc107";
     estiloResultado3.style = "background:#ffc107";
