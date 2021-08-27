@@ -1,3 +1,8 @@
+#home {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 header {
     text-align: center;
     color: #157347
@@ -20,6 +25,6 @@ form {
     align-self: center;
 }
 
-#resultP{
+#resultP {
     color: white;
 }

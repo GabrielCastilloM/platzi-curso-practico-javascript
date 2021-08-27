@@ -19,13 +19,13 @@ function llenarListaNumeros(params) {
         return a - b
     })
     const resultlistaOrdenada = document.querySelector("#resultlistaOrdenada")
-    resultlistaOrdenada.innerText = `Lista Ordenada[${listaOrdenada}]` 
+    resultlistaOrdenada.innerText = `Lista Ordenada[${listaOrdenada}]`
 }
 
 function calcular() {
     calcularMediaArimetica(listaNumeros)
     calcularMediana(listaNumeros)
-    calcularModa(listaNumeros) 
+    calcularModa(listaNumeros)
     pintarResultado()
 }
 

@@ -1,3 +1,8 @@
+#home {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 header {
     text-align: center;
     color: #dc3545;
@@ -11,7 +16,7 @@ header {
     text-align: center;
 
 }
-button{
+button {
     margin-top: 20px;
 }
 
