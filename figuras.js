@@ -111,16 +111,18 @@ const calcularAreaTriangulo = () => {
 const calcularPerimetroCirculo = () => {
     const radio = parseInt(document.querySelector('#inputRadio').value)
     const perimetro = perimetroCirculo(radio)
+    const perimetroDecimal = perimetro.toFixed(2)
     const estiloResultado = document.querySelector("#footerCirculo")
-    estiloResultado.innerHTML = `<h5>El perimetro del círculo es: ${perimetro}</h5>`
+    estiloResultado.innerHTML = `<h5>El perimetro del círculo es: ${perimetroDecimal}</h5>`
     estiloResultado.style = "background:#c7c7d9";
 }
 
 const calcularAreaCirculo = () => {
     const radio = parseInt(document.querySelector('#inputRadio').value)
     const area = areaCirculo(radio)
+    const areaDecimal = area.toFixed(2)
     const estiloResultado = document.querySelector("#footerCirculo")
-    estiloResultado.innerHTML = `<h5>El área del círculo es: ${area}</h5>`
+    estiloResultado.innerHTML = `<h5>El área del círculo es: ${areaDecimal}</h5>`
     estiloResultado.style = "background:#97d280";
 }
 

@@ -42,8 +42,9 @@ function calcularMediaArimetica(lista) {
         }
     )
     const promedioLista = sumaLista / lista.length;
+    const promedioListaDecimal = promedioLista.toFixed(2)
     const resultp = document.querySelector("#resultP")
-    resultp.innerText = `Es:  ${promedioLista}`
+    resultp.innerText = `Es:  ${promedioListaDecimal}`
     return promedioLista
 }
 
